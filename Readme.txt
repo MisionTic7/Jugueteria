@@ -41,4 +41,4 @@ Link de Trello
 https://trello.com/b/7qvMzvAS/jugueteria
 
 
- 
+ Empiezo mi colaborativo en el proyecto
