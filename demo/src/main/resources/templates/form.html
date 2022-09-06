@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+   <link rel="stylesheet"   type="text/css" href="/Formulario_registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap" rel="stylesheet">
+    <title>Formulario registro</title> 
+</head>
+<body>
+
+<header>
+        <div class="container-header">
+        <div class="info">
+            <p>ventas@playgroundjugueteria.com | +56 9999 5555</p>
+        </div>
+       
+        <div class="button-header">
+            <button type="button" name="ingresar" class="btn-ingresar">Ingresar</button>
+            <button type="button" name="ingresar" class="btn-registrarse">Regístrarse</button>
+        </div>
+        </div>
+    </header>
+
+
+    <main class="container-main">
+        <div class="logo">
+            <img src="images/Design/logo.png"  alt="Logo Playground Jugueteria"></img>
+        </div>
+       
+    </main>
+
+    
+    <form th:action="@{/save}" th:object=${persona} method="post">
+
+<div class="formulario">
+
+    <h2>Registrarse</h2>
+    <input th:field="*{id}" type="text" class="form-control control"></input>
+    <label>Nombre</label>
+   <input th:field="*{nombres}" type="text" name="nombre" class="text" required>
+    <label>Apellidos</label>
+    <input th:field="*{apellidos}" type="text" class="text" name="apellido" required>
+    <label>E-mail</label>
+   <input th:field="*{correo}" type="email" name="correo"  class="text" required>
+    <label>Contraseña</label>
+    <input th:field="*{correo}" name="contraseña" type="password" class="text" required>
+    <input class="boton" type="submit" value="Aceptar">
+
+    </form>
+</div>
+
+
+<div  class="slider">
+    <ul>
+    
+    <li>
+        <img class="images_slider" src="images/fisher-price-png.png" alt="">
+        <img class="images_slider" src="images/Lego-logo.jpg" alt="">
+        <img class="images_slider" src="images/play-doh-715x400.jpg" alt="">
+    </li>
+    
+    
+    <li>
+        <img class="images_slider" src="images/Hot-Wheels-Logo.png" alt="">
+        <img class="images_slider" src="images/Hasbro-Logo.png" alt="">
+        <img class="images_slider" src="images/2560px-Toys__R__Us_logo.svg.png" alt="">
+    </li>
+    
+    
+    <li>
+        <img class="images_slider" src="images/Mattel-Logo-1969.png" alt="">
+        <img class="images_slider" src="images/barbie.png" alt="">
+        <img class="images_slider" src="images/nenuco-715x400.jpg" alt="">
+    </li>
+    
+    
+    <li>
+        <img class="images_slider" src="images/Bizak_logo.svg.png" alt="">
+        <img class="images_slider" src="images/mark.png" alt="">
+        <img class="images_slider" src="images/a.png" alt="">
+    </li>
+    
+    </ul>
+    
+    </div>
+
+    <footer>
+        <div class="footer-box">
+            <div class="contacto">
+            <h3>CONTACTENOS</h3>
+                <ul>
+                    <li>ventas@playgroundjugueteria.com</li>
+                    <li>+56 9999 5555</li>
+                </ul>
+            </div>
+            <div class="informacion">
+                <h3>INFORMACIÓN</h3>
+                    <ul>
+                        <li><a href="#">Devolución</a></li>
+                        <li><a href="#">Despacho</a></li>
+                        <li><a href="#">Ventas mayoristas</a></li>
+                    </ul>
+            </div>
+            <div class="pagos">
+                <h3>FORMAS DE PAGO</h3>
+                    <ul>
+                        <li><i class="fab fa-cc-visa"></i></li>
+                        <li><i class="fab fa-cc-mastercard"></i></li>
+                        <li><i class="fab fa-cc-paypal"></i></li>
+                    </ul>
+            </div>
+            <div>
+                <div class="mapa-box"></div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
