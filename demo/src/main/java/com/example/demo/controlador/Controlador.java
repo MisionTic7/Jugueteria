@@ -28,9 +28,9 @@ public class Controlador {
     public String listar(Model model) {
 	  List<Persona>personas = service.listar();
 	  model.addAttribute("personas",personas);
-	return "index";
+	return "list";
 }
-	@GetMapping("/new")
+	@GetMapping("/register")
 	public String agregar(Model model) {
 		model.addAttribute("persona",new Persona());
 		return "form";
@@ -52,5 +52,6 @@ public class Controlador {
 		service.delete(id);
 		return "redirect:/listar";
 	}
+	
 	
 }

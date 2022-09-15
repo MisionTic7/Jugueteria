@@ -3,9 +3,8 @@
 https://github.com/MisionTic7/Jugueteria.git
 
 Colaboradores:
-Silvana Paola Largo Tapasco
 Carolina Torres Cardona
-Luz Hyda Giron Cabezas
+James Ruiz Carmona
 German Camilo Bernal Muñoz
 Juan Pablo Rodríguez Velásquez
 
