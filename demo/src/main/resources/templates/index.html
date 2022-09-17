@@ -1,191 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet"   type="text/css" href="/css/Formulario_registro.css/">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="/js/slide.js/"></script>
 
     <title>Playground-Jugueteria</title>
-</head>
+  </head>
 
-<body>
-   
-    <header>
-        <div class="container-header">
-        <div class="info">
-            <p>ventas@playgroundjugueteria.com | +56 9999 5555</p>
+  <body>
+    <header class="flex justify-between pl-4 bg-[#ba7cf7] items-center">
+      <a href="/">
+        <img
+          src="https://i.postimg.cc/SR0V2mCR/Logo-removebg-preview.png"
+          alt="Logo Playground Jugueteria"
+        />
+      </a>
+      <nav class="flex w-1/2 justify-evenly">
+        <div class="flex-auto w-2/3">
+          <ul class="flex justify-evenly">
+            <li><a href="#" class="hover:text-white transition">Home</a></li>
+            <li>
+              <a href="#marcas" class="hover:text-red-100 transition">Marcas</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-100 transition">Edades</a>
+            </li>
+            <li>
+              <a href="#contacto" class="hover:text-purple-100 transition"
+                >Contacto</a
+              >
+            </li>
+            <li>
+              <a href="/productCart" class="hover:text-cyan-500 transition p-2">
+                <i class="fas fa-shopping-cart"> </i>
+              </a>
+            </li>
+          </ul>
         </div>
-       
-        <div class="button-header">
-            <a href="/login">
-                <button type="button" name="ingresar" class="btn-ingresar">Ingresar</button>
-            </a>
-            <a href="/register">
-                <button type="button" name="registro" class="btn-registrarse">Regístrarse</button>
-            </a>
+        <div class="flex-auto flex justify-evenly">
+          <a href="/login" class="hover:text-green-100 transition">
+            Ingresar
+          </a>
+          <a href="/register" class="hover:text-yellow-200 transition">
+            Regístrarse
+          </a>
         </div>
-        </div>
+      </nav>
     </header>
-  
-    <main class="container-main">
-        
-            <a href="/">
-                <img src="images/Design/logo.png"  alt="Logo Playground Jugueteria"></img>
-            </a>
-       
-        <div class="buscar-wrapper">
-            <input class="buscador-box" type="search" text="Search" placeholder="Buscar producto">
-            <button type="button" class="fas fa-search" id="lupa"></button>
-        </div>
-        <div class="container-carrito">
-            <div class="carro">
-                <a href="/productCart">
-                    <i class="fas fa-shopping-cart" id="icono-carrito">
-                        <div class="box-carrito"></div>
-                    </i>
-                </a>
-            </div>
-        </div>
-    </main>
-    
-    <nav class="main-navbar">
-        
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#marcas">Marcas</a></li>
-            <li><a href="#">Edades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
 
-
-
- 
-   
     <div id="window">
-        <div id="slide-container">
-            <div class="slides">
-          
-  
-                <img class="slide" src="images/Vistas/barbie-slide1.jpeg"> 
-            </div>
-        
- 
-            <div class="slides">
-                <img class="slide" src="images/Vistas/spiderman-slide2.jpeg"> 
-            </div>
-        
-    
+      <div id="slide-container">
         <div class="slides">
-                <img class="slide" src="images/Vistas/frozen-slide3.jpeg"> 
-            </div>
-            <a id="previous" class="arrow-left">&#10094</a>
-            <a id="next" class="arrow">&#10095</a>
-            <div id="text-bar">
-                <p id="place"></p>
-            </div>
+          <img class="slide" src="images/Vistas/barbie-slide1.jpeg" />
         </div>
-        <div id="dotsContainer"></div>
+
+        <div class="slides">
+          <img class="slide" src="images/Vistas/spiderman-slide2.jpeg" />
+        </div>
+
+        <div class="slides">
+          <img class="slide" src="images/Vistas/frozen-slide3.jpeg" />
+        </div>
+        <a id="previous" class="arrow-left"> </a>
+        <a id="next" class="arrow"> </a>
+        <div id="text-bar">
+          <p id="place"></p>
+        </div>
+      </div>
+      <div id="dotsContainer"></div>
     </div>
-    
-
-
-
 
     <div class="info-destacados">
-        <h3>
-            PRODUCTOS DESTACADOS
-        </h3>
+      <h3>PRODUCTOS DESTACADOS</h3>
     </div>
-   
+
     <section class="destacados">
-        <div class="destacados-box1">
-           
-           
-            
-        </div>
-        <div class="destacados-box2">
-            
-        </div>
+      <div class="destacados-box1"></div>
+      <div class="destacados-box2"></div>
     </section>
 
-   
     <section id="marcas">
-        <h3>
-            NUESTRAS MARCAS
-        </h3>
-        <div  class="slider">
-            <ul>
-            
-            <li>
-                <img class="images_slider" src="/images/fisher-price-png.png" alt="">
-                <img class="images_slider" src="/images/Lego-logo.jpg" alt="">
-                <img class="images_slider" src="/images/play-doh-715x400.jpg" alt="">
-            </li>
-            
-            
-            <li>
-                <img class="images_slider" src="/images/Hot-Wheels-Logo.png" alt="">
-                <img class="images_slider" src="/images/Hasbro-Logo.png" alt="">
-                <img class="images_slider" src="/images/2560px-Toys__R__Us_logo.svg.png" alt="">
-            </li>
-            
-            
-            <li>
-                <img class="images_slider" src="/images/Mattel-Logo-1969.png" alt="">
-                <img class="images_slider" src="/images/barbie.png" alt="">
-                <img class="images_slider" src="/images/nenuco-715x400.jpg" alt="">
-            </li>
-            
-            
-            <li>
-                <img class="images_slider" src="/images/Bizak_logo.svg.png" alt="">
-                <img class="images_slider" src="/images/mark.png" alt="">
-                <img class="images_slider" src="/images/a.png" alt="">
-            </li>
-            
-            </ul>
-            
-            </div>
+      <h3>NUESTRAS MARCAS</h3>
+      <div class="slider">
+        <ul>
+          <li>
+            <img
+              class="images_slider"
+              src="/images/fisher-price-png.png"
+              alt=""
+            />
+            <img class="images_slider" src="/images/Lego-logo.jpg" alt="" />
+            <img
+              class="images_slider"
+              src="/images/play-doh-715x400.jpg"
+              alt=""
+            />
+          </li>
 
+          <li>
+            <img
+              class="images_slider"
+              src="/images/Hot-Wheels-Logo.png"
+              alt=""
+            />
+            <img class="images_slider" src="/images/Hasbro-Logo.png" alt="" />
+            <img
+              class="images_slider"
+              src="/images/2560px-Toys__R__Us_logo.svg.png"
+              alt=""
+            />
+          </li>
+
+          <li>
+            <img
+              class="images_slider"
+              src="/images/Mattel-Logo-1969.png"
+              alt=""
+            />
+            <img class="images_slider" src="/images/barbie.png" alt="" />
+            <img
+              class="images_slider"
+              src="/images/nenuco-715x400.jpg"
+              alt=""
+            />
+          </li>
+
+          <li>
+            <img
+              class="images_slider"
+              src="/images/Bizak_logo.svg.png"
+              alt=""
+            />
+            <img class="images_slider" src="/images/mark.png" alt="" />
+            <img class="images_slider" src="/images/a.png" alt="" />
+          </li>
+        </ul>
+      </div>
     </section>
 
-   
     <footer id="contacto">
-        <div class="footer-box">
-            <div class="contacto">
-            <h3>CONTACTENOS</h3>
-                <ul>
-                    <li>ventas@playgroundjugueteria.com</li>
-                    <li>+56 9999 5555</li>
-                </ul>
-            </div>
-            <div class="informacion">
-                <h3>INFORMACIÓN</h3>
-                    <ul>
-                        <li><a href="#">Devolución</a></li>
-                        <li><a href="#">Despacho</a></li>
-                        <li><a href="#">Ventas mayoristas</a></li>
-                    </ul>
-            </div>
-            <div class="pagos">
-                <h3>FORMAS DE PAGO</h3>
-                    <ul>
-                        <li><i class="fab fa-cc-visa"></i></li>
-                        <li><i class="fab fa-cc-mastercard"></i></li>
-                        <li><i class="fab fa-cc-paypal"></i></li>
-                    </ul>
-            </div>
-            <div>
-                <div class="mapa-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d255858.18448484907!2d-74.11976343055036!3d40.697663748391925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scl!4v1643680349834!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
+      <div class="footer-box">
+        <div class="contacto">
+          <h3>CONTACTENOS</h3>
+          <ul>
+            <li>ventas@playgroundjugueteria.com</li>
+            <li>+56 9999 5555</li>
+          </ul>
         </div>
+        <div class="informacion">
+          <h3>INFORMACIÓN</h3>
+          <ul>
+            <li><a href="#">Devolución</a></li>
+            <li><a href="#">Despacho</a></li>
+            <li><a href="#">Ventas mayoristas</a></li>
+          </ul>
+        </div>
+        <div class="pagos">
+          <h3>FORMAS DE PAGO</h3>
+          <ul>
+            <li><i class="fab fa-cc-visa"></i></li>
+            <li><i class="fab fa-cc-mastercard"></i></li>
+            <li><i class="fab fa-cc-paypal"></i></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mapa-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d255858.18448484907!2d-74.11976343055036!3d40.697663748391925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scl!4v1643680349834!5m2!1ses!2scl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
