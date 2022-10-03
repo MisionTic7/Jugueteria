@@ -15,9 +15,6 @@ import com.example.demo.interfaceService.IpersonaService;
 import com.example.demo.modelo.Persona;
 
 
-
-
-
 @Controller
 @RequestMapping
 public class Controlador {
@@ -30,7 +27,7 @@ public class Controlador {
 	  model.addAttribute("personas",personas);
 	return "list";
 }
-	@GetMapping("/register")
+	@GetMapping("/new")
 	public String agregar(Model model) {
 		model.addAttribute("persona",new Persona());
 		return "form";
